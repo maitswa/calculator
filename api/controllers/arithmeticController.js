@@ -5,7 +5,7 @@ exports.calculate = function(req, res) {
     if (res.headersSent) {
       return next(err);
     }
-
+// chnge
     res.status(400);
     res.json({ error: err.message });
   });
